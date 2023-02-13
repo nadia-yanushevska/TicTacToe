@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FFEB"
+    tools:context=".EnterNamesActivity">
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/name_enter"
+        android:textColor="#2F9176"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_label2"
+        android:textColor="#1D5747"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPlayerName2"
+        app:layout_constraintStart_toStartOf="@+id/editTextPlayerName2" />
+
+    <EditText
+        android:id="@+id/editTextPlayerName"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="#FFF4FE"
+        android:ems="10"
+        android:hint="@string/name_hint"
+        android:inputType="textPersonName"
+        android:textColor="#1D5747"
+        android:textColorHint="#9CCABD"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextPlayerName2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <TextView
+        android:id="@+id/nameLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_label1"
+        android:textColor="#1D5747"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPlayerName"
+        app:layout_constraintStart_toStartOf="@+id/editTextPlayerName" />
+
+    <EditText
+        android:id="@+id/editTextPlayerName2"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="#FFF4FE"
+        android:ems="10"
+        android:hint="@string/name_hint"
+        android:inputType="textPersonName"
+        android:textColor="#1D5747"
+        android:textColorHint="#9CCABD"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextPlayerName"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <Button
+        android:id="@+id/nameSubmit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:onClick="OnSaveBtnClick"
+        android:text="@string/name_btn"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPlayerName2"
+        app:strokeColor="#2F9176"
+        app:strokeWidth="1dp"
+        tools:ignore="UsingOnClickInXml" />
+</androidx.constraintlayout.widget.ConstraintLayout>
